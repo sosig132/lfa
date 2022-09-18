@@ -1,0 +1,64 @@
+#
+#   comment lines (skip them)
+#
+STATES:
+    qAccept, A 
+    qReject, R 
+    1,S
+    2
+    3
+    4
+    5
+    6
+    7
+    8
+END
+#
+#   comment lines (skip them)
+#
+SYMBOLS:
+    y
+    z
+    ^
+END
+#
+#   comment lines (skip them)
+#
+TAPESYMBOLS:
+    y
+    z
+    ^
+    x
+    /
+END
+#
+#   comment lines (skip them)
+#
+TRANSITIONS:
+    1, y, 2, x, R
+    1, z, 3, x, R
+    1, ^, 8, R
+    2, y, 2, R
+    2, z, 2, R
+    2, ^, 4, R
+    3, y, 3, R
+    3, z, 3, R
+    3, ^, 5, R
+    4, x, 4, R
+    4, y, 6, x, L
+    5, x, 5, R
+    5, z, 6, x, L
+    6, y, 6, L
+    6, z, 6, L
+    6, x, 6, L
+    6, ^, 7, L
+    7, y, 7, L
+    7, z, 7, L
+    7, x, 1, R
+    8, x, 8, R
+    8, /, qAccept, R
+END
+
+BLANK:
+    /
+END

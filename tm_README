@@ -1,0 +1,5 @@
+STATES section represents the set of states of the Turing Machine. They can be followed by A, R, or S, which mean Accepted, Rejected and Starting State. There can only be one S.
+SYMBOLS section represents the tape alphabet.
+TAPESYMBOLS section represents the input alphabet.
+BLANK section represents the blank element.
+TRANSITIONS section represents the transition function.

@@ -1,0 +1,3 @@
+VARIABLES section contains non-terminal symbols, and can be followed by an S, which means it's a starting symbol. There can only be one starting symbol
+SIGMA section contains terminal symbols
+RULES section contains the CFG rules in the format VARIABLE->RULE

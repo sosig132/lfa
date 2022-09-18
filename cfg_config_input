@@ -1,0 +1,18 @@
+VARIABLES:
+    A
+END
+
+SIGMA:
+    a
+    b
+    c
+END
+
+START:
+    A
+END
+
+RULE:
+    A -> aA
+    A -> abc
+END
